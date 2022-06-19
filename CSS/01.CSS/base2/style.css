@@ -1,0 +1,25 @@
+p {
+    text-align: end;
+}
+
+.message {
+    text-align: start;
+}
+
+.start {
+    font-weight: bold;
+}
+
+.adress {
+
+    font-style: italic;
+}
+
+.letter {
+    font-family: 'Bad Script', cursive;
+}
+
+.head {
+    font-weight: bold;
+    text-decoration: underline;
+}
