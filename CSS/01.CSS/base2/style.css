@@ -26,3 +26,15 @@
     font-weight: bold;
     text-decoration: underline;
 }
+
+.position {
+    width: 700px;
+    background-color: white;
+    position: relative;
+    left: 300px;
+    padding: 1px 10px;
+}
+
+#body {
+    background-color: black
+}
