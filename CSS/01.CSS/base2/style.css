@@ -1,4 +1,4 @@
-p {
+.hat {
     text-align: end;
 }
 
@@ -13,10 +13,13 @@ p {
 .adress {
 
     font-style: italic;
+    
 }
 
 .letter {
     font-family: 'Bad Script', cursive;
+    text-indent: 10px;
+    
 }
 
 .head {
