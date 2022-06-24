@@ -1,0 +1,15 @@
+span {
+    background-image: url('cards.7e0a18f0.png');
+    width: 140px;
+    height: 200px;
+    background-position: -430px -1390px;
+    display: inline-block;
+    position: relative
+}
+
+.margin {
+    background-image: url('cards.7e0a18f0.png');
+    width: 140px;
+    height: 200px;
+    float: left
+}
