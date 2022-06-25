@@ -1,13 +1,13 @@
 .navigation {
-    width: 15cm;
+    width: 15em;
     background-color: rgb(197, 197, 197);
     float: left;
 }
 
 .article {
     background-color: rgb(180, 178, 178);
-    margin-bottom: 2em;
-    margin-left: 15cm;
+    margin-bottom: .2em;
+    margin-left: 15em;
 }
 
 .footer {
