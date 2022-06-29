@@ -1,0 +1,44 @@
+.wrap {
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(216, 216, 216);
+}
+
+.row {
+    display: flex;
+
+}
+
+.left {
+    padding: 10px 0px;
+    width: 15em;
+    height: 100%;
+    background-color: rgb(189, 189, 189)
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.rt {
+    padding: 10px 0px;
+    margin-bottom: 0.2em;
+    background-color: rgb(155, 155, 155)
+}
+
+.rb {
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(155, 155, 155)
+}
+
+.footer {
+    margin-top: 0.2em;
+    background-color: rgb(194, 194, 194);
+}
+
+.img {
+    align-self: flex-end;
+}
