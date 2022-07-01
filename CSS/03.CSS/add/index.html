@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .week {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .week>div, div.week>div>div>div {
+            position: relative;
+            background: rgb(209, 209, 209);
+            color: grey;
+            border: solid 2px rgb(94, 94, 94);
+            width: 100px;
+            height: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .week>div>div {
+            visibility: hidden;
+            position: relative;
+            z-index: -1;
+            transition-duration: 0.5s;
+            opacity: 0;
+            top: 10px;
+            right: 2px;
+        }
+
+        .week>div:hover>div {
+            visibility: visible;
+            z-index: -1;
+            transform: translate(0px, -11px);
+            opacity: 1;
+
+        }
+
+        @media all and (max-width: 746px) {
+            .week {
+                flex-direction: column;
+            }
+
+            .week>div>div {
+                visibility: hidden;
+                position: relative;
+                z-index: -1;
+                transition-duration: 0.5s;
+                top: -20px;
+                left: 0px;
+            }
+
+            .week>div:hover>div {
+                visibility: visible;
+                z-index: -1;
+                left: 100px;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="week">
+        <div>
+            Понедельник
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Вторник
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Среда
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Четверг
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Пятница
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Суббота
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>
+            Воскресение
+            <div>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
