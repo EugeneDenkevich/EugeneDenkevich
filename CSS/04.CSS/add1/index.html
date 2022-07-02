@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border-style: solid;
+            border-color: rgb(170, 170, 170);
+            border-width: 1px;
+            border-radius: 0px 15px 0px 15px;
+            padding: 5px;
+            width: 80%;
+        }
+
+        a[href*='doc']::before {
+            content: url(/CSS/04.CSS/base1/document.png);
+        }
+        a[href*='MS']::after {
+            content: url(/CSS/04.CSS/base1/word.png);
+        }
+        a[href*='MS'][class^=li]::after {
+            display:none;
+            content: url(/CSS/04.CSS/base1/word.png);
+        }
+        a[href*='MS'][class^=li]:hover::after {
+            display:inline;
+            content: url(/CSS/04.CSS/base1/word.png);
+        }
+        a[href*='MS'][class^=li]::before {
+            content: url(/CSS/04.CSS/base1/file.jpg);
+        }
+        
+        a[href*='PDF.']::before {
+            content: url(/CSS/04.CSS/base1/document.png);
+        }
+        a[href*='PDFd']::after {
+            content: url(/CSS/04.CSS/base1/PDF.png);
+        }
+        a[href*='PDFd'][class^=li]::after {
+            display:none;
+            content: url(/CSS/04.CSS/base1/PDF.png);
+        }
+        a[href*='PDFd'][class^=li]:hover::after {
+            display:inline;
+            content: url(/CSS/04.CSS/base1/PDF.png);
+        }
+        a[href*='PDFd'][class^=li]::before {
+            content: url(/CSS/04.CSS/base1/file.jpg);
+        }
+
+        a[href*='Z']::before {
+            content: url(/CSS/04.CSS/base1/document.png);
+        }
+        a[href*='Ar']::after {
+            content: url(/CSS/04.CSS/base1/Archive.gif);
+        }
+        a[href*='Ar'][class^=li]::after {
+            display:none;
+            content: url(/CSS/04.CSS/base1/Archive.gif);
+        }
+         a[href*='Ar'][class^=li]:hover::after {
+            display:inline;
+            content: url(/CSS/04.CSS/base1/Archive.gif);
+        }
+        a[href*='Ar'][class^=li]::before {
+            content: url(/CSS/04.CSS/base1/file.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Форматы файлов.</h1>
+
+    <p>.DOC или .doc (от анго. <a href="/CSS/04.CSS/base1/document.html">document</a>) - расширение имени
+        файла, используемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось
+        для обозначения простых текстовых файлов без формирования, однако позже стало использоваться для двоичных
+        форматов с разеткой<br>
+        <a href="/CSS/04.CSS/base1/MSWord.html">Документ MS Word</a>
+    </p>
+    <p>
+        Portable Document Format (<a href="/CSS/04.CSS/base1/PDF.html">PDF</a>) - межплатформенный формат
+        электронных документов, разработанный филмой Adjvt Systems с использованием ряда возможностей языка
+        Postscript.<br>
+        <a href="/CSS/04.CSS/base1/PDFdoc.html">Документ PDF</a>
+    </p>
+    <p>
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a
+            href="/CSS/04.CSS/base1/ZIPdownl.html">.zip</a> и хранимт в сжатом или несжатов виде один или
+        несколько файлов, которые можно из него извлеч путём распаковки с помощью специальной программы.<br>
+        <a href="/CSS/04.CSS/base1/Archive.html">Архив</a>
+    </p>
+    <h1>Это список файлов</h1>
+    <a href="/CSS/04.CSS/base1/MSWord.html" class="link">Документ MS Word </a><br>
+    <a href="/CSS/04.CSS/base1/PDFdoc.html" class="link">Документ PDF </a><br>
+    <a href="/CSS/04.CSS/base1/Archive.html" class="link">Архив </a>
+</body>
+
+</html>
