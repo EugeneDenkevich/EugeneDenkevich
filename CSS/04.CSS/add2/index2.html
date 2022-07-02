@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            list-style-type: none;
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        ul:first-child {
+            counter-reset: cage1 72;
+        }
+
+        ul:first-child>li:before {
+            counter-increment: cage1 -8;
+            content: counter(cage1);
+        }
+
+        ul:nth-child(2) {
+            counter-reset: cage2 71;
+        }
+
+        ul:nth-child(2)>li:before {
+            counter-increment: cage2 -8;
+            content: counter(cage2);
+        }
+
+        ul:nth-child(3) {
+            counter-reset: cage3 70;
+        }
+
+        ul:nth-child(3)>li:before {
+            counter-increment: cage3 -8;
+            content: counter(cage3);
+        }
+
+        ul:nth-child(4) {
+            counter-reset: cage4 69;
+        }
+
+        ul:nth-child(4)>li:before {
+            counter-increment: cage4 -8;
+            content: counter(cage4);
+        }
+
+        ul:nth-child(5) {
+            counter-reset: cage5 68;
+        }
+
+        ul:nth-child(5)>li:before {
+            counter-increment: cage5 -8;
+            content: counter(cage5);
+        }
+
+        ul:nth-child(6) {
+            counter-reset: cage6 67;
+        }
+
+        ul:nth-child(6)>li:before {
+            counter-increment: cage6 -8;
+            content: counter(cage6);
+        }
+
+        ul:nth-child(7) {
+            counter-reset: cage7 66;
+        }
+
+        ul:nth-child(7)>li:before {
+            counter-increment: cage7 -8;
+            content: counter(cage7);
+        }
+
+        ul:nth-child(8) {
+            counter-reset: cage8 65;
+        }
+
+        ul:nth-child(8)>li:before {
+            counter-increment: cage8 -8;
+            content: counter(cage8);
+        }
+
+        ul:nth-child(odd)>li:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+
+        ul:nth-child(even)>li:nth-child(even) {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
