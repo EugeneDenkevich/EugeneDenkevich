@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 400px;
+        }
+
+        input:first-child {
+            margin-bottom: 5px;
+        }
+
+        input:nth-child(2) {
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <input type="text" value=""> * Пароль
+            <input type="text" value=""> * Повторите пароль
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function ($) {
+
+            $(document).on('keypress', function () {
+
+                let a = document.querySelectorAll('input:first-child').value;
+                let b = document.querySelectorAll('input:nth-child(2)').value;
+
+                if (a == b) {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'green');
+                } else {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'red');
+                }
+
+            })
+        })
+
+    </script>
+</body>
+
+</html>

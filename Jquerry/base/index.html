@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        table {
+            text-align: center;
+            border: 3px dotted black;
+            border-collapse: collapse;
+            width: 80%;
+            caption-side: bottom;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        tr:nth-child(2n-3)>td {
+            background-color: rgb(206, 206, 206);
+        }
+
+        tr:nth-child(1)>td {
+            background-color: rgb(158, 158, 158);
+            color: white;
+        }
+
+        td {
+            border: 1px dotted black;
+        }
+
+        
+        button {
+            width: 200px;
+            height: 2em;
+            background-color: rgb(77, 77, 255);
+            color:white;
+            border:none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        tr {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+        <tr>
+            <td>ФИО</td>
+            <td>пол</td>
+            <td>должность</td>
+            <td>дата рожд.</td>
+            <td>Данные 01</td>
+            <td>Данные 02</td>
+        </tr>
+        <tr>
+            <td class="left">Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr>
+            <td class="left">Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>секретарь</td>
+            <td>01.01.1989</td>
+            <td>98796</td>
+            <td>46523</td>
+        </tr>
+        <tr>
+            <td class="left">Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>987979</td>
+        </tr>
+        <tr>
+            <td class="left">Пупин Фёдор Фёдорович</td>
+            <td>М</td>
+            <td>водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr>
+            <td class="left">Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>водитель 2</td>
+            <td>01.01.1983</td>
+            <td>74323434</td>
+            <td>923123379</td>
+        </tr>
+    </table>
+    <button>Нет скрытых строк</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function($){
+            $('tr').on('click', function(){
+                $(this).css('visibility', 'collapse');
+                $('button').text("Показать скытые строки");
+            })
+            $('button').on('click', function(){
+                $('tr').css('visibility', 'visible');
+                $('button').text("Нет скрытых строк");
+            })
+        });
+    </script>
+
+</body>
+
+</html>
