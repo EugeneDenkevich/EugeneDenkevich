@@ -37,21 +37,25 @@
 
     <script>
         $(document).ready(function ($) {
+            $('input:first-child, input:nth-child(2)').keyup(function () {
+                var val1 = $('input:first-child').val();
+                var val2 = $('input:nth-child(2)').val();
+                if (val1 != val2) {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'red')
+                } else if (val1 == val2) {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'green')
+                }
 
-            $(document).on('keypress', function () {
-
-                let a = document.querySelectorAll('input:first-child').value;
-                let b = document.querySelectorAll('input:nth-child(2)').value;
-
-                if (a == b) {
-                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'green');
-                } else {
-                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'red');
+                //Дальше хотел реализовать окрашивание фона обоих полей
+                //белым при пустых значениях val1 и val2.
+                //Ломал голову, но так и не смог. Как? =)
+                
+                else if (val1 == "" && val2 == "") {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'white')
                 }
 
             })
         })
-
     </script>
 </body>
 
