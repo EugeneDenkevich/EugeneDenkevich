@@ -42,18 +42,13 @@
                 var val2 = $('input:nth-child(2)').val();
                 if (val1 != val2) {
                     $('input:first-child, input:nth-child(2)').css('backgroundColor', 'red')
-                } else if (val1 == val2) {
-                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'green')
                 }
-
-                //Дальше хотел реализовать окрашивание фона обоих полей
-                //белым при пустых значениях val1 и val2.
-                //Ломал голову, но так и не смог. Как? =)
-                
                 else if (val1 == "" && val2 == "") {
                     $('input:first-child, input:nth-child(2)').css('backgroundColor', 'white')
                 }
-
+                else if (val1 == val2) {
+                    $('input:first-child, input:nth-child(2)').css('backgroundColor', 'green')
+                }
             })
         })
     </script>
